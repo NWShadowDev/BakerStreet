@@ -1,0 +1,13 @@
+#logo {
+  float: left;
+  position: relative;
+  z-index: 2;
+  top: 120px;
+  left:60px;
+}
+
+#logo-bg {
+  float: left;
+  position: absolute;
+  z-index: 1;
+}
