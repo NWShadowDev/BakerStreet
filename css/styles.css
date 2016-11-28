@@ -31,7 +31,7 @@
 #navbar li {
   margin: 40px;
   list-style-type: none;
-  /*text-align: center;*/
+  text-align: center;
 }
 
 .top {
@@ -42,15 +42,6 @@
   width: 100%;
 }
 
-#photos {
-  position: relative;
-  float: right;
-  display:block;
-  text-align: center;
-  width: 780px;
-  margin-right: 25px;
-}
-
 .image {
   width: 250px;
   height: 250px;
@@ -58,40 +49,34 @@
   border-radius: 15px;
 }
 
-h2 {
-  float: right;
-  position: relative;
-  text-align: center;
-}
-
-p {
-  margin-top: -10px;
-  float: right;
-  position: relative;
-}
-
 #header {
   float: right;
   position: relative;
   text-align: center;
+  width: 800px;
 }
 
 #section {
   position: relative;
+  top: 50%;
+  /*left: 10%;*/
+  width: 800px;
   float: right;
-  display:block;
   text-align: center;
 }
 
-h2, p {
-  width: 780px;
-  padding-right: 10px;
-  margin-right: 25px;
+#photos {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+.row1, .row2 {
+  float: left;
 }
 
 @media (max-width: 600px) {
   #photos, h2, p {
-    width: 90%;
+    width: 100%;
   }
   #logo-bg {
     display: none;
@@ -121,9 +106,20 @@ h2, p {
   }
   #header {
     padding-top: 100px;
+    width: 100%;
+  }
+  #section {
+    width: 50%;
+    display: inline-block;
     text-align: center;
     margin: 0 auto;
-    display: block;
+    float: left;
+    margin-left: 110px;
+  }
+  #photos {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
   }
 }
 
